@@ -1,0 +1,36 @@
+<nav class="navbar navbar-default navbarcontroler">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">WebSiteName</a>
+    </div>
+    
+    <form class="navbar-form navbar-right" action="/action_page.php">
+      <ul class="nav navbar-nav">
+        <li class="active"><button class="m1" mat-flat-button color="primary">CREATE EXAM</button></li>
+        <li><button class="m1" mat-flat-button color="accent">POST YOUR ADS</button></li>
+        <li><button class="m1" mat-flat-button color="warn">LOGIN</button></li>
+      </ul>
+      <div class="input-group m1">
+        <mat-form-field>
+          <input matInput placeholder="Search">
+          
+        </mat-form-field>
+        <button mat-mini-fab color="accent"> <i class="glyphicon glyphicon-search"></i></button>
+      </div>
+    </form>
+  </div>
+</nav>
+<nav class="navbar navbar-default navbarcontroler">
+  <div class="container-fluid">
+    <form class="navbar-form navbar-left">
+      <ul class="nav navbar-nav">
+        <li ><a routerLinkActive='active'  [routerLink]="['/home']" >HOME</a></li>
+        <li><a  routerLinkActive='active'  [routerLink]="['/exam']" >EXAM</a></li>
+        <li><a  routerLinkActive='active'  [routerLink]="['/ads']" >ALL ADS</a></li>
+        <li><a  routerLinkActive='active'  [routerLink]="['/news']" >NEWS</a></li>
+        <li><a  routerLinkActive='active'  [routerLink]="['/publication']" >PUBLICATION</a></li>
+        <li><a  routerLinkActive='active'  [routerLink]="['/book']" >BOOKS</a></li>
+      </ul>
+    </form>
+  </div>
+</nav>
