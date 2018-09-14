@@ -9,18 +9,9 @@ branches:
   - master
 before_script:
 - npm install -g @angular/cli
-- npm install -g gh-pages
-
 script:
 - ng build --prod
-- ng build --prod --base-href "https://Kasunjith-Bimal.github.io/QL/"
 
-after_success:
-  - gh-pages -d dist
-after_script:
-- chmod +x publish-gh-pages.sh && ./publish-gh-pages.sh
-deploy:
-  provider: heroku
-  api_key:
-    secure: GiH3L0O2RtKA1g7jXS8f_w 
-  app: angularql
+
+
+
