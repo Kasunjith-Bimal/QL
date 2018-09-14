@@ -1,0 +1,54 @@
+.m1{
+  margin-left: 5px;
+}
+
+.navbarcontroler{
+  background-color: white;
+  color: black;
+  border: opx solid black;
+}
+
+@media only screen and (max-width: 767px) {
+  .mat-button, .mat-flat-button, .mat-icon-button, .mat-stroked-button {
+    box-sizing: border-box;
+    position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    outline: 0;
+    border: none;
+    -webkit-tap-highlight-color: transparent;
+    display: inline-block;
+    white-space: nowrap;
+    text-decoration: none;
+    vertical-align: baseline;
+    text-align: center;
+    margin: 0;
+    min-width: 100%;
+    line-height: 36px;
+    padding: 0 16px;
+    border-radius: 2px;
+    overflow: visible;
+  }
+
+  .input-group {
+    display: block;
+    position: relative;
+    flex: auto;
+    width: 470px;
+}
+}
+
+.navbar-form {
+  padding: 10px 15px;
+  margin-top: 8px;
+  margin-right: -15px;
+  margin-bottom: 8px;
+  margin-left: -15px;
+  /* border-top: 1px solid transparent; */
+  /* border-bottom: 1px solid transparent; */
+  /* box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 0 rgba(255,255,255,.1); */
+}
+
