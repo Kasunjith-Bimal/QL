@@ -1,0 +1,21 @@
+.examinationheader{
+    padding-top: 10px;
+    margin: 0 auto;
+    text-align: left;
+    background: yellow;
+    font-size: 15px;
+}
+.header{
+    margin-top: 15px;
+    background: yellow;
+    font-size: 15px;
+}
+
+.examinationBox{
+    float: left;
+    margin-left: 20px;
+    height: 300px;
+    width: 200px;
+    border: 1px solid black;
+    margin-top: 10px;
+}

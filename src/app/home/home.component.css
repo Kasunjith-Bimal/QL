@@ -1,0 +1,45 @@
+.x{
+    border: 1px solid black;
+}
+.Advertisementheader{
+    margin: 0 auto;
+    text-align: center;
+    background: yellow;
+    font-size: 15px;
+}
+
+.AdvetistmentBox{
+    margin: 0 auto;
+    text-align: center;
+    height: 300px;
+    width: 200px;
+    border: 1px solid black;
+    margin-top: 10px;
+}
+.examinationBox{
+    float: left;
+    margin-left: 55px;
+    height: 300px;
+    width: 200px;
+    border: 1px solid black;
+    margin-top: 10px;
+}
+
+.examinationheader{
+    padding-top: 10px;
+    margin: 0 auto;
+    text-align: center;
+    background: yellow;
+    font-size: 15px;
+}
+
+.Headeraboutus{
+    font-size: 25px; 
+}
+
+.Headercontactus{
+    font-size: 25px; 
+}
+.footer{
+    margin-top: 25px;
+}
