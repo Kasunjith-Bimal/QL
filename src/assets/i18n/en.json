@@ -1,0 +1,13 @@
+{
+  "Navigation": {
+    "CREATE EXAM": "CREATE EXAM",
+    "POST YOUR ADS": "POST YOUR ADS",
+    "LOGIN":"LOGIN",
+    "HOME":"HOME",
+    "EXAM":"EXAM",
+    "ALL ADS":"ALL ADS",
+    "NEWS":"NEWS",
+    "PUBLICATION":"PUBLICATION",
+    "BOOK":"BOOK"
+  }
+}
