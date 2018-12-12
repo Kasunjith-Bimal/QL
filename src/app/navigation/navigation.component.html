@@ -1,14 +1,15 @@
 <nav class="navbar navbar-default navbarcontroler">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">WebSiteName</a>
+      <a class="navbar-brand" href="#">Qk Learn</a>
     </div>
     
     <form class="navbar-form navbar-right" action="/action_page.php">
       <ul class="nav navbar-nav">
-        <li class="active"><button class="m1" mat-flat-button color="primary">CREATE EXAM</button></li>
-        <li><button class="m1" mat-flat-button color="accent">POST YOUR ADS</button></li>
-        <li><button class="m1" mat-flat-button color="warn">LOGIN</button></li>
+        <li class="active"><button class="m1" mat-flat-button color="primary">  {{ 'Navigation.CREATE EXAM' | translate }}</button></li>
+        <li><button class="m1" mat-flat-button color="accent">  {{ 'Navigation.POST YOUR ADS' | translate }} </button></li>
+        <li><button class="m1" mat-flat-button color="warn">{{ 'Navigation.LOGIN' | translate }} </button></li>
+       
       </ul>
       <div class="input-group m1">
         <mat-form-field>
@@ -16,6 +17,9 @@
           
         </mat-form-field>
         <button mat-mini-fab color="accent"> <i class="glyphicon glyphicon-search"></i></button>
+        <select #langSelect (change)="translate.use(langSelect.value)">
+            <option *ngFor="let lang of translate.getLangs()" [value]="lang" [selected]="lang === translate.currentLang">{{ lang }}</option>
+          </select>
       </div>
     </form>
   </div>
@@ -24,12 +28,16 @@
   <div class="container-fluid">
     <form class="navbar-form navbar-left">
       <ul class="nav navbar-nav">
-        <li ><a routerLinkActive='active'  [routerLink]="['/home']" >HOME</a></li>
-        <li><a  routerLinkActive='active'  [routerLink]="['/exam']" >EXAM</a></li>
-        <li><a  routerLinkActive='active'  [routerLink]="['/ads']" >ALL ADS</a></li>
-        <li><a  routerLinkActive='active'  [routerLink]="['/news']" >NEWS</a></li>
-        <li><a  routerLinkActive='active'  [routerLink]="['/publication']" >PUBLICATION</a></li>
-        <li><a  routerLinkActive='active'  [routerLink]="['/book']" >BOOK</a></li>
+        <li ><a routerLinkActive='active'  [routerLink]="['/home']" >{{ 'Navigation.HOME' | translate }}  </a></li>
+        <li><a  routerLinkActive='active'  [routerLink]="['/exam']" >{{ 'Navigation.EXAM' | translate }} </a></li>
+        <li><a  routerLinkActive='active'  [routerLink]="['/ads']" >{{ 'Navigation.ALL ADS' | translate }} </a></li>
+        <li><a  routerLinkActive='active'  [routerLink]="['/news']" >{{ 'Navigation.NEWS' | translate }} </a></li>
+        <li><a  routerLinkActive='active'  [routerLink]="['/publication']" >{{ 'Navigation.PUBLICATION' | translate }} </a></li>
+        <li><a  routerLinkActive='active'  [routerLink]="['/book']" >{{ 'Navigation.BOOK' | translate }} </a></li>
+
+       
+        
+      
       </ul>
     </form>
   </div>

@@ -15,6 +15,14 @@ import { AnswerComponent } from './answer/answer.component';
 import {MatInputModule} from '@angular/material/input';
 import { routing } from './app.route';
 import {MatListModule} from '@angular/material/list';
+import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
+import {HttpClientModule, HttpClient} from '@angular/common/http';
+import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+
+// AoT requires an exported function for factories
+export function HttpLoaderFactory(httpClient: HttpClient) {
+  return new TranslateHttpLoader(httpClient);
+}
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,8 +41,16 @@ import {MatListModule} from '@angular/material/list';
     BrowserAnimationsModule,
     MatButtonModule,
     MatInputModule,
+    HttpClientModule,
     MatListModule,
-    routing
+    routing,
+    TranslateModule.forRoot({
+      loader: {
+          provide: TranslateLoader,
+          useFactory: HttpLoaderFactory,
+          deps: [HttpClient]
+      }
+  })
   ],
   providers: [],
   bootstrap: [AppComponent]
